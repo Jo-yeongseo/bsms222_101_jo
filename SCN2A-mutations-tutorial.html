@@ -189,6 +189,7 @@ pre code {
 <li><a href="#counting-the-recurrent-mutations">3.2 Counting the recurrent mutations</a></li>
 <li><a href="#what-is-the-proportion-of-diagnosis-for-scn2a-patient">3.3 What is the proportion of diagnosis for SCN2A patient?</a></li>
 <li><a href="#find-the-position-where-different-consequences-of-mutations-occur">3.4 Find the position where different consequences of mutations occur</a></li>
+<li><a href="#sketch-a-plot-to-visualize-your-analysis">3.5 Sketch a plot to visualize your analysis</a></li>
 </ul></li>
 </ul>
 </div>
@@ -221,7 +222,7 @@ pre code {
 <pre><code>## package &#39;rio&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\tmp\RtmpiEIYeK\downloaded_packages</code></pre>
+##  C:\tmp\Rtmpsj0aoU\downloaded_packages</code></pre>
 <p>Now you can read the file from the website. This will create the d object.</p>
 <pre class="r"><code>d = rio::import(&#39;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015533/bin/NIHMS957592-supplement-1.xlsx&#39;)</code></pre>
 <p>Let’s explore the object you just loaded. How would you check the class of the object d?</p>
@@ -474,9 +475,9 @@ nrow(phenotype)</code></pre>
 library(tidyverse)</code></pre>
 <pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
 <pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.3     v dplyr   1.0.7
+## v tibble  3.1.4     v dplyr   1.0.7
 ## v tidyr   1.1.3     v stringr 1.4.0
-## v readr   2.0.0     v forcats 0.5.1</code></pre>
+## v readr   2.0.1     v forcats 0.5.1</code></pre>
 <pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
@@ -552,6 +553,10 @@ d %&gt;% group_by(locus) %&gt;% count() %&gt;% filter(n &gt; 1) %&gt;% select(lo
 ##  9 &quot;2695&quot;
 ## 10 &quot;2715&quot;
 ## # ... with 35 more rows</code></pre>
+</div>
+<div id="sketch-a-plot-to-visualize-your-analysis" class="section level2">
+<h2>3.5 Sketch a plot to visualize your analysis</h2>
+<p>When you examine the dataset, you would draw something to show your output. Though we haven’t learnt how to plot data yet, we can have a quick sketch for the dataset. There’s no restriction on your suggestion. Please submit your hand-drawing for the plot you would like to show from this dataset.</p>
 </div>
 </div>
 
